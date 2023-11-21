@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<options>
+    <option>
+        <short>c</short>
+        <long>catalog</long>
+        <description>catalog name</description>
+        <required>true</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>s</short>
+        <long>schema</long>
+        <description>schema name</description>
+        <required>true</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>t</short>
+        <long>table</long>
+        <description>table name</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>a</short>
+        <long>all</long>
+        <description>all table</description>
+        <required>false</required>
+        <hasarg>false</hasarg>
+    </option>
+    <option>
+        <short>f</short>
+        <long>frequency</long>
+        <description>frequency</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>st</short>
+        <long>snapshotTimestamp</long>
+        <description>snapshot timestamp</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>si</short>
+        <long>snapshotId</long>
+        <description>snapshot ID</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>m</short>
+        <long>method</long>
+        <description>method</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>p</short>
+        <long>param</long>
+        <description>param</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+</options>
