@@ -35,4 +35,32 @@
         <required>false</required>
         <hasarg>true</hasarg>
     </option>
+    <option>
+        <short>st</short>
+        <long>snapshotTimestamp</long>
+        <description>snapshot timestamp</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>si</short>
+        <long>snapshotId</long>
+        <description>snapshot ID</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>m</short>
+        <long>method</long>
+        <description>method</description>
+        <required>true</required>
+        <hasarg>true</hasarg>
+    </option>
+    <option>
+        <short>p</short>
+        <long>param</long>
+        <description>param</description>
+        <required>false</required>
+        <hasarg>true</hasarg>
+    </option>
 </options>
