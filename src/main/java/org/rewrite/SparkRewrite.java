@@ -58,12 +58,6 @@ public class SparkRewrite {
                 .appName("Spark SQL Example")
                 .config("spark.sql.session.timeZone", "Asia/Shanghai")
                 .config("spark.sql.iceberg.handle-timestamp-without-timezone", "true")
-//                .config("spark.sql.catalog.iceberg_catalog4", "org.apache.iceberg.spark.SparkCatalog")
-//                .config("spark.sql.catalog.iceberg_catalog4.type", "hive")
-//                .config("spark.sql.catalog.iceberg_catalog4.uri", "thrift://hz11-trino-arctic-0.jd.163.org:9083")
-//                .config("spark.sql.extensions","org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions")
-//                .config("spark.sql.extensions","org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions")
-//                .master("local")
                 .getOrCreate();
 
         String method = argsLine.getOptionValue("m");
@@ -80,7 +74,6 @@ public class SparkRewrite {
         for(String table : tables){
             executorService.submit(() -> {
                 try {
-//                                SparkActions.get(spark).rewriteDataFiles(icebergTable).option("delete-file-threshold","1").execute();
                     String localTableName = table+"_iceberg";
                     String sql = String.format("CALL %s.system.rollback_to_timestamp('%s.%s', TIMESTAMP '%s')", CATALOG, DB, localTableName,time);
                     spark.sql(sql);
